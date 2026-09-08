@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InstagramFeed from "@/components/InstagramFeed";
 
 const series = [
   {
@@ -84,6 +85,31 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Instagram feed */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+            <div>
+              <p className="text-xs tracking-[0.3em] uppercase text-rose-400 mb-3">
+                Latest work
+              </p>
+              <h2 className="font-heading text-3xl md:text-4xl text-stone-900">
+                From the studio
+              </h2>
+            </div>
+            <a
+              href="https://www.instagram.com/culekart"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs tracking-widest uppercase text-stone-500 hover:text-rose-400 transition-colors self-start md:self-auto"
+            >
+              @culekart on Instagram →
+            </a>
+          </div>
+          <InstagramFeed />
         </div>
       </section>
 
