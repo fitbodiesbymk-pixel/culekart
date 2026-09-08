@@ -1,5 +1,5 @@
 import Link from "next/link";
-import InstagramFeed from "@/components/InstagramFeed";
+import InstagramGrid from "@/components/InstagramGrid";
 
 const series = [
   {
@@ -109,7 +109,7 @@ export default function Home() {
               @culekart on Instagram →
             </a>
           </div>
-          <InstagramFeed />
+          <InstagramGrid />
         </div>
       </section>
 
