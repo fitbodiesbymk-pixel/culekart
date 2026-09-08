@@ -7,12 +7,13 @@ const INSTAGRAM_URL = "https://www.instagram.com/culekart";
 const posts = [
   { src: "/culekart/instagram/post-1.jpg", alt: "Blossom tree painting by Sharon Culek" },
   { src: "/culekart/instagram/post-2.jpg", alt: "Forest painting by Sharon Culek" },
+  { src: "/culekart/instagram/post-3.jpg", alt: "Landscape painting by Sharon Culek" },
 ];
 
 export default function InstagramGrid() {
   return (
     <div>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-3 gap-2">
         {posts.map((post) => (
           <a
             key={post.src}
