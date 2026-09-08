@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${lato.variable} bg-[#fafaf8]`}>
       <body className="min-h-screen flex flex-col bg-[#fafaf8] text-stone-900 antialiased">
         <Nav />
         <main className="flex-1">{children}</main>

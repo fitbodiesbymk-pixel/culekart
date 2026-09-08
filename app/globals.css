@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #fafaf8;
-  --color-foreground: #1a1a1a;
   --font-heading: var(--font-playfair);
   --font-body: var(--font-lato);
 }
 
+html,
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background-color: #fafaf8;
+  color: #1a1a1a;
   font-family: var(--font-body), system-ui, sans-serif;
 }
