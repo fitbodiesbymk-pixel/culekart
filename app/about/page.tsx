@@ -1,10 +1,18 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-        {/* Portrait placeholder */}
-        <div className="aspect-[4/5] bg-rose-100 flex items-center justify-center text-stone-300 text-sm">
-          Artist portrait
+    <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+        {/* Portrait — full width on mobile, constrained on desktop */}
+        <div className="relative w-full aspect-square md:aspect-[4/5] overflow-hidden rounded-sm">
+          <Image
+            src="/culekart/sharon.jpg"
+            alt="Sharon Culek — artist"
+            fill
+            className="object-cover object-top"
+            priority
+          />
         </div>
 
         {/* Text */}
@@ -12,7 +20,7 @@ export default function AboutPage() {
           <p className="text-xs tracking-[0.3em] uppercase text-rose-400 mb-4">
             About Sharon
           </p>
-          <h1 className="font-heading text-4xl md:text-5xl text-stone-900 mb-8 leading-tight">
+          <h1 className="font-heading text-3xl md:text-5xl text-stone-900 mb-8 leading-tight">
             A British artist,
             <br />
             living beautifully in Prague
@@ -43,7 +51,7 @@ export default function AboutPage() {
       </div>
 
       {/* Exhibition notice */}
-      <div className="mt-24 p-10 bg-rose-50 text-center">
+      <div className="mt-16 md:mt-24 p-8 md:p-10 bg-rose-50 text-center">
         <p className="text-xs tracking-[0.3em] uppercase text-rose-400 mb-3">
           Upcoming
         </p>
