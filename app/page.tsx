@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import InstagramGrid from "@/components/InstagramGrid";
 
 const series = [
@@ -26,29 +27,43 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-[88vh] flex flex-col items-center justify-center text-center px-6 py-24">
-        <p className="text-xs tracking-[0.3em] uppercase text-rose-400 mb-6">
-          Sharon Culek
-        </p>
-        <h1 className="font-heading text-5xl md:text-7xl text-stone-900 leading-tight max-w-3xl mb-6">
-          Inspired by travel
-        </h1>
-        <p className="text-xl md:text-2xl text-stone-400 font-light italic max-w-xl mb-12">
-          where the sketchbook is a girl's best friend
-        </p>
-        <div className="flex gap-4 flex-wrap justify-center">
-          <Link
-            href="/portfolio"
-            className="bg-rose-400 text-white px-8 py-3 text-xs tracking-widest uppercase hover:bg-rose-500 transition-colors"
-          >
-            View Portfolio
-          </Link>
-          <Link
-            href="/commissions"
-            className="border border-stone-300 text-stone-600 px-8 py-3 text-xs tracking-widest uppercase hover:border-rose-400 hover:text-rose-400 transition-colors"
-          >
-            Commissions
-          </Link>
+      <section className="min-h-[88vh] grid grid-cols-1 md:grid-cols-2">
+        {/* Text — stacks on top on mobile */}
+        <div className="flex flex-col justify-center px-8 md:px-16 py-20 md:py-0">
+          <p className="text-xs tracking-[0.3em] uppercase text-rose-400 mb-6">
+            Sharon Culek
+          </p>
+          <h1 className="font-heading text-5xl md:text-6xl text-stone-900 leading-tight mb-6">
+            Inspired by travel
+          </h1>
+          <p className="text-xl text-stone-400 font-light italic mb-12">
+            where the sketchbook is a girl's best friend
+          </p>
+          <div className="flex gap-4 flex-wrap">
+            <Link
+              href="/portfolio"
+              className="bg-rose-400 text-white px-8 py-3 text-xs tracking-widest uppercase hover:bg-rose-500 transition-colors"
+            >
+              View Portfolio
+            </Link>
+            <Link
+              href="/commissions"
+              className="border border-stone-300 text-stone-600 px-8 py-3 text-xs tracking-widest uppercase hover:border-rose-400 hover:text-rose-400 transition-colors"
+            >
+              Commissions
+            </Link>
+          </div>
+        </div>
+
+        {/* Painting */}
+        <div className="relative w-full aspect-square md:aspect-auto md:min-h-[88vh]">
+          <Image
+            src="/culekart/hero.jpg"
+            alt="Fuji-san painting by Sharon Culek"
+            fill
+            className="object-cover object-center"
+            priority
+          />
         </div>
       </section>
 
