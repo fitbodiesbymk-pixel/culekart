@@ -3,7 +3,7 @@ const series = [
     id: "fuji-san",
     title: "Fuji-san Series",
     description:
-      "Fun, cheerful and vibrant interpretations of Japan's most sacred mountain. These paintings capture the joy and energy of Fuji-san — bold colour, movement, and a sense of wonder.",
+      "27 original works inspired by three years living in Yokohama, Japan. Influenced by Hokusai's iconic 36 views of Mount Fuji, Sharon set herself the challenge of capturing the sacred mountain across oil, ink, mixed media and digital — each piece a different mood, angle, and story. Influences range from ukiyo-e printmakers to Van Gogh, Klimt, and the German Expressionists.",
     works: [
       { title: "Fuji-san No. 1", color: "bg-rose-100" },
       { title: "Fuji-san No. 2", color: "bg-rose-200" },
@@ -15,7 +15,7 @@ const series = [
     id: "abstract",
     title: "Abstract Collections",
     description:
-      "Paintings that combine rich colour, floral motifs and small bubbles of joy. These abstracts are lively and layered — pieces that reward time and attention.",
+      "Lively, layered paintings combining rich colour, floral motifs and what Sharon calls 'bubbles of joy' — a recurring motif that has found its way onto many canvases. Rooted in a love of Czech and Japanese landscapes, these pieces reward time and attention.",
     works: [
       { title: "Abstract No. 1", color: "bg-amber-50" },
       { title: "Abstract No. 2", color: "bg-orange-50" },
@@ -26,7 +26,7 @@ const series = [
     id: "alphabet",
     title: "Alphabet Illustrations",
     description:
-      "Bespoke name designs — a personal piece of art created for someone special. Each piece is one-of-a-kind, combining hand-lettering with Sharon's painterly style.",
+      "Bespoke name designs — a personal piece of art created for someone special. Sharon works with each client to weave in meaningful colours, objects, and memories, making every piece a story as much as a painting.",
     comingSoon: true,
     works: [
       { title: "Alphabet — S", color: "bg-stone-100" },

@@ -48,9 +48,12 @@ export default function CommissionsPage() {
           Commissions
         </h1>
         <p className="text-stone-500 max-w-xl mx-auto leading-relaxed">
-          Sharon welcomes commission enquiries. Whether you're after a bespoke
-          alphabet piece, a travel painting, or something entirely your own —
-          get in touch and she'll be happy to discuss what's possible.
+          Sharon's commissioned pieces are deeply personal. She works with
+          clients to embed meaningful objects, colours, and memories into the
+          work — a dialogue is always at the heart of the process. Whether
+          you're after a bespoke alphabet piece, a travel painting, or something
+          entirely your own, get in touch and she'll be happy to discuss what's
+          possible.
         </p>
       </div>
 
